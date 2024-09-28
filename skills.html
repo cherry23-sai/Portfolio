@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>Skills</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+
+    }
+    .logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.name::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #4b8bbc;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+body{
+    background-color: #4b8bbc;
+}
+.nav a:hover{
+    color: #264653;
+    transition: 1s;
+}
+.name{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.nav a{
+    color: white;
+    font-size: 15px; 
+    font-weight: 600;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.skill{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 110px;
+    width: 550px;
+    height: 300px;
+    margin-top: 250px;
+    margin-left: 350px;
+    padding: 75px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.skill::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 110px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency for dimming */
+    z-index: 1; /* Place the overlay behind the text */
+}
+.skill p,li{
+    position: relative;
+    z-index: 2; /* Keep the text above the dimmed background */
+    color: white; /* Or any other color to contrast with the background */
+    font-size: 20px;
+}
+</style>
+<body>
+    <header class="logo">
+        <a href="#" class="name">Portfolio</a>
+        <nav class="nav">
+            <a href="index.html" class="home">Home</a>
+            <a href="about.html" target="_self">Education</a>
+            <a href="job.html">Experience</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+    </header>
+    <div class="skill">
+        <p>Programming languages which are skilled...</p>
+        <p><li>Java</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>C language</li>
+        <li>JavaScript</li></p>
+    </div>
+    </body>
+</html>
