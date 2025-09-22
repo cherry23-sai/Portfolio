@@ -7,23 +7,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Include Google Font in <head> -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-
-
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 1s ease-out;
-    }
-    .fade-in.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(50px); transition: all 1s ease-out; }
+    .fade-in.show { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 <body class="bg-black text-white font-sans">
@@ -38,7 +27,7 @@
       <a href="#projects" class="hover:text-purple-400 transition">PROJECTS</a>
       <a href="#contact" class="hover:text-purple-400 transition">CONTACT</a>
     </nav>
-    <a href="Charan_Resume.pdf" download class="ml-4 border px-4 py-1 rounded hover:bg-purple-500 transition">
+    <a href="Charan's Resume.pdf" download class="ml-4 border px-4 py-1 rounded hover:bg-purple-500 transition">
       Resume <i class="fas fa-download ml-2"></i>
     </a>
   </header>
@@ -56,9 +45,9 @@
   </section>
 
   <!-- About -->
-<section class="h-screen px-10 py-20 flex items-center fade-in bg-gradient-to-br from-[#0f001f] via-[#150036] to-[#1a0038]" id="about">
+  <section class="h-screen px-10 py-20 flex items-center fade-in bg-gradient-to-br from-[#0f001f] via-[#150036] to-[#1a0038]" id="about">
     <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      <img src="pic1.jpg" alt="Charan Sai" class="h-80 w-80  object-cover rounded-xl shadow-lg hover:scale-105 transition" />
+      <img src="pic1.jpg" alt="Charan Sai" class="h-80 w-80 object-cover rounded-xl shadow-lg hover:scale-105 transition" />
       <div>
         <h2 class="text-4xl font-bold mb-4">About Me</h2>
         <p>
@@ -71,7 +60,7 @@
   </section>
 
   <!-- Education -->
-<section class="h-screen px-10 py-20 fade-in bg-gradient-to-br from-[#0f001f] via-[#1a0030] to-[#1a0038]" id="education">
+  <section class="h-screen px-10 py-20 fade-in bg-gradient-to-br from-[#0f001f] via-[#1a0030] to-[#1a0038]" id="education">
     <h2 class="text-4xl font-bold mb-10 text-center">Education</h2>
     <div class="space-y-6 max-w-4xl mx-auto">
       <div class="bg-blue-600 p-6 rounded-lg shadow hover:scale-105 transition">
@@ -87,85 +76,90 @@
   </section>
 
   <!-- Skills -->
-<section class="h-screen px-10 py-20 fade-in bg-gradient-to-br from-[#0f001f] via-[#16013a] to-[#1a0038]" id="skills">
-  <h2 class="text-4xl font-bold mb-10 text-center">Skills</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-    <!-- Skill Card Template -->
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">Java</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[85%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">85%</span>
+  <section class="h-screen px-10 py-20 fade-in bg-gradient-to-br from-[#0f001f] via-[#16013a] to-[#1a0038]" id="skills">
+    <h2 class="text-4xl font-bold mb-10 text-center">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <!-- Skill Cards -->
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">Java</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[85%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">85%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">C</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[75%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">75%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">Python</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[70%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">70%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">JavaScript</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[80%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">80%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">HTML</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[90%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">90%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">CSS</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[85%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">85%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">Bootstrap</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[80%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">80%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">Tailwind CSS</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[85%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">85%</span>
+      </div>
+      <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
+        <span class="relative z-10 font-semibold">React (Basic)</span>
+        <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[60%] transition-all duration-500 ease-in-out"></div>
+        <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">60%</span>
+      </div>
     </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">C</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[75%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">75%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">Python</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[70%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">70%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">JavaScript</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[80%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">80%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">HTML</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[90%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">90%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">CSS</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[85%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">85%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">Bootstrap</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[80%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">80%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">Tailwind CSS</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[85%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">85%</span>
-    </div>
-
-    <div class="relative bg-green-600 p-4 rounded-lg text-center overflow-hidden group transition">
-      <span class="relative z-10 font-semibold">React (Basic)</span>
-      <div class="absolute inset-0 bg-black bg-opacity-50 w-0 group-hover:w-[60%] transition-all duration-500 ease-in-out"></div>
-      <span class="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-300 text-sm z-10">60%</span>
-    </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Projects -->
-<section class="h-screen px-10 py-20 fade-in bg-gradient-to-br from-[#0f001f] via-[#190141] to-[#1a0038]" id="projects">
+  <section class="h-screen px-10 py-20 fade-in bg-gradient-to-br from-[#0f001f] via-[#190141] to-[#1a0038]" id="projects">
     <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div class="relative group hover:scale-105 transition">
-        <img src="SUBS.jpg" class="rounded-lg shadow-lg" Onclick="https://github.com/cherry@23-sai/Cloud_Based_System/" />
+      <!-- Project 1 -->
+      <div class="relative group hover:scale-105 transition cursor-pointer" 
+           onclick="openModal('Smart Utility Billing System',
+           'A cloud-based web system that manages electricity, water, and gas usage by collecting real-time meter readings, generating bills, and providing dashboards for users and admins.',
+           'SUBS.jpg',
+           'https://github.com/cherry23-sai/Cloud_Based_System')">
+        <img src="SUBS.jpg" class="rounded-lg shadow-lg" />
         <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition">
           Smart Utility Billing System
         </div>
       </div>
-      <div class="relative group hover:scale-105 transition">
+      <!-- Project 2 -->
+      <div class="relative group hover:scale-105 transition cursor-pointer" 
+           onclick="openModal('RentEase: A Solution for Renters & Owners',
+           'An online platform that connects product owners and renters across categories like electronics, travel, and clothing. Includes search, filtering, cart, orders, OTP-based registration, and payment integration.',
+           'RE.png',
+           'https://github.com/cherry23-sai/RentEase')">
         <img src="RE.png" class="rounded-lg shadow-lg" />
         <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition">
           RentEase: A Solution for Renters & Owners
         </div>
       </div>
-      <div class="relative group hover:scale-105 transition">
+      <!-- Project 3 -->
+      <div class="relative group hover:scale-105 transition cursor-pointer" 
+           onclick="openModal('FuelRush: A Fuel Delivery App',
+           'An innovative online fuel delivery app built with HTML, CSS, and JavaScript, enabling users to order fuel conveniently. Includes features like order history, pricing trends, and promotional offers.',
+           'FR.png',
+           'https://github.com/cherry23-sai/Fuel-Rush')">
         <img src="FR.png" class="rounded-lg shadow-lg" />
         <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition">
           FuelRush: A Fuel Delivery App
@@ -174,70 +168,83 @@
     </div>
   </section>
 
-  <!-- Contact -->
-<section id="contact" class="h-screen px-10 py-20 bg-gradient-to-br from-[#0f001f] via-[#1c0146] to-[#1a0038]"> 
-  <h2 class="text-4xl font-bold mb-10 text-center text-fuchsia-400">Contact Me</h2>
-  <form class="max-w-xl mx-auto bg-white bg-opacity-10 backdrop-blur-xl p-8 rounded-2xl shadow-xl space-y-6 border border-purple-800">
-    <div>
-      <label class="block mb-1 text-purple-300 font-medium">Name</label>
-      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-[#1c0146] text-white border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+  <!-- Project Modal -->
+  <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+    <div class="bg-white text-black rounded-2xl shadow-lg max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 overflow-hidden">
+      <!-- Left Side: Description -->
+      <div class="p-8 flex flex-col justify-between">
+        <div>
+          <h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+          <p id="modalDescription" class="mb-6"></p>
+        </div>
+        <a id="modalGithub" href="#" target="_blank" 
+           class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-500 transition text-center">
+          View on GitHub
+        </a>
+      </div>
+      <!-- Right Side: Image -->
+      <div class="flex items-center justify-center bg-gray-200">
+        <img id="modalImage" src="" alt="Project Image" class="object-cover h-full w-full">
+      </div>
     </div>
-    <div>
-      <label class="block mb-1 text-purple-300 font-medium">Email</label>
-      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-[#1c0146] text-white border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
-    </div>
-    <div>
-      <label class="block mb-1 text-purple-300 font-medium">Message</label>
-      <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg bg-[#1c0146] text-white border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
-    </div>
-    <button type="submit" class="w-full py-3 rounded-lg bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white font-semibold transition">Send Message</button>
-  </form>
-</section>
-<!-- Spacer between contact and footer -->
-<div class="h-32 bg-gradient-to-b from-[#1a0038] to-[#0a001d]"></div>
-
-
-  <!-- Footer Section -->
-<footer class="bg-[#14002d] text-white text-center py-10">
-  <!-- Wave background -->
-  <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
-    <svg class="relative block w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M0,0V46.29c47.91,22,103.78,29.79,158,17C256,42,312,0,375,0s118,42,178,47,106-15,162-35,116-35,179-11,111,60,206,61V0Z"
-        opacity=".25" fill="#000000"></path>
-      <path d="M0,0V15.81C47.91,39.76,103.78,60.63,158,49.74,256,29.94,312,0,375,0s118,29.94,178,34.06,106-4.06,162-14.06,116-20,179-6,111,48,206,50V0Z"
-        opacity=".5" fill="#0a001d"></path>
-      <path d="M0,0V5.63C47.91,35.93,103.78,76.36,158,78.27c98,4.06,154-53.24,217-53.24s118,39.76,178,44.06,106-10,162-20,116-20,179-6,111,50,206,50V0Z"
-        fill="#0a001d"></path>
-    </svg>
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-5 right-8 text-white text-3xl">&times;</button>
   </div>
 
-  <!-- Content -->
-  <div class="relative z-10 flex flex-col items-center justify-center py-12">
-    <!-- Logo -->
-    <div class="mb-4">
-      <div class="bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-full p-4 shadow-2xl">
-        <span class="text-white text-4xl font-bold">C</span>
+  <!-- Contact -->
+  <section id="contact" class="h-screen px-10 py-20 bg-gradient-to-br from-[#0f001f] via-[#1c0146] to-[#1a0038]"> 
+    <h2 class="text-4xl font-bold mb-10 text-center text-fuchsia-400">Contact Me</h2>
+    <form class="max-w-xl mx-auto bg-white bg-opacity-10 backdrop-blur-xl p-8 rounded-2xl shadow-xl space-y-6 border border-purple-800">
+      <div>
+        <label class="block mb-1 text-purple-300 font-medium">Name</label>
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-[#1c0146] text-white border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
       </div>
-      <p class="text-center mt-2 text-lg font-medium">Charan Sai | Portfolio</p>
-    </div>
+      <div>
+        <label class="block mb-1 text-purple-300 font-medium">Email</label>
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-[#1c0146] text-white border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+      </div>
+      <div>
+        <label class="block mb-1 text-purple-300 font-medium">Message</label>
+        <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg bg-[#1c0146] text-white border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
+      </div>
+      <button type="submit" class="w-full py-3 rounded-lg bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white font-semibold transition">Send Message</button>
+    </form>
+  </section>
+  <div class="h-32 bg-gradient-to-b from-[#1a0038] to-[#0a001d]"></div>
 
-    <!-- Social Icons -->
-    <div class="flex gap-6 mt-4 text-2xl">
+  <!-- Footer -->
+  <footer class="bg-[#14002d] text-white text-center py-10">
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+      <svg class="relative block w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.91,22,103.78,29.79,158,17C256,42,312,0,375,0s118,42,178,47,106-15,162-35,116-35,179-11,111,60,206,61V0Z"
+          opacity=".25" fill="#000000"></path>
+        <path d="M0,0V15.81C47.91,39.76,103.78,60.63,158,49.74,256,29.94,312,0,375,0s118,29.94,178,34.06,106-4.06,162-14.06,116-20,179-6,111,48,206,50V0Z"
+          opacity=".5" fill="#0a001d"></path>
+        <path d="M0,0V5.63C47.91,35.93,103.78,76.36,158,78.27c98,4.06,154-53.24,217-53.24s118,39.76,178,44.06,106-10,162-20,116-20,179-6,111,50,206,50V0Z"
+          fill="#0a001d"></path>
+      </svg>
+    </div>
+    <div class="relative z-10 flex flex-col items-center justify-center py-12">
+      <div class="mb-4">
+        <div class="bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-full p-4 shadow-2xl">
+          <span class="text-white text-4xl font-bold">C</span>
+        </div>
+        <p class="text-center mt-2 text-lg font-medium">Charan Sai | Portfolio</p>
+      </div>
+      <div class="flex gap-6 mt-4 text-2xl">
         <a href="#" class="hover:text-fuchsia-400 transition"><i class="fab fa-x-twitter"></i></a>
         <a href="https://www.instagram.com/charansai_23" class="hover:text-fuchsia-400 transition"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/charan-sai-kappera-b875a6271/" class="hover:text-fuchsia-400 transition"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/cherry23-sai" class="hover:text-fuchsia-400 transition"><i class="fab fa-github"></i></a>
         <a href="#" class="hover:text-fuchsia-400 transition"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p class="mt-6 text-sm text-gray-300">© Copyright 2023–2025 Charan Sai</p>
     </div>
+  </footer>
 
-    <!-- Copyright -->
-    <p class="mt-6 text-sm text-gray-300">© Copyright 2023–2025 Charan Sai</p>
-  </div>
-</footer>
-
-
-  <!-- Fade In on Scroll -->
+  <!-- Scripts -->
   <script>
+    // Fade in on scroll
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = { threshold: 0.1 };
     const appearOnScroll = new IntersectionObserver((entries, obs) => {
@@ -248,12 +255,21 @@
         }
       });
     }, appearOptions);
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
 
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
+    // Modal functions
+    function openModal(title, description, image, githubLink) {
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalDescription").innerText = description;
+      document.getElementById("modalImage").src = image;
+      document.getElementById("modalGithub").href = githubLink;
+      document.getElementById("projectModal").classList.remove("hidden");
+      document.getElementById("projectModal").classList.add("flex");
+    }
+    function closeModal() {
+      document.getElementById("projectModal").classList.add("hidden");
+      document.getElementById("projectModal").classList.remove("flex");
+    }
   </script>
 </body>
 </html>
-
-
